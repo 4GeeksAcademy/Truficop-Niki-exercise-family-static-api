@@ -38,7 +38,6 @@ def handle_hello():
 @app.route('/members', methods=['GET'])
 def get_all_members():
     members = jackson_family.get_all_members()
-    print(members)  # this will print the list of members in the console
     return jsonify(members), 200
 
 
